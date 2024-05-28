@@ -307,6 +307,8 @@ human_fstype (STRUCT_STATVFS const *statfsbuf)
       return "bdevfs";
     case S_MAGIC_BFS: /* 0x1BADFACE local */
       return "bfs";
+    case S_MAGIC_BCACHEFSS: /* 0xca451a4e local */
+      return "bcachefs";
     case S_MAGIC_BINDERFS: /* 0x6C6F6F70 local */
       return "binderfs";
     case S_MAGIC_BPF_FS: /* 0xCAFE4A11 local */
